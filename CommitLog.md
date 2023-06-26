@@ -1,3 +1,4 @@
 First Commit - added Assets folder, Added styles.css, styles folder, and Read Me
 Added index.html, index.js
-Added CSS elements, header, nav, menu items, footer
+Added HTML header, footer, h1, nav, menu items
+Added CSS & HTML elements, header, nav, menu items, footer
