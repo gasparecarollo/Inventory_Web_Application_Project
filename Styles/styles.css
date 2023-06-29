@@ -13,6 +13,8 @@ header {
     color: cornflowerblue;
 }
 
+
+
 nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
@@ -32,24 +34,10 @@ nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
     align-items: center;
-    background-color: cadetblue;
     color: aquamarine;
 
-    border-style: groove;
-    border-width: 3px;
-    border-right-width: 5px;
-    border-color: azure;
-
 
 }
-
-body {
-
-    background-color: whitesmoke;
-}
-
-
-
 
 
 /* #li1 {
@@ -97,8 +85,8 @@ footer {
 
 }
 
-footer h4 {}
+/* footer h4 {}
 
 footer ul {}
 
-footer ul li {}
+footer ul li {} */
