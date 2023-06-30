@@ -4,3 +4,4 @@ Added HTML header, footer, h1, nav, menu items
 Added CSS & HTML elements, header, nav, menu items, footer
 Added multiple html pages, and connected nav links in the menu
 Made changes to the Stream-A-Box ul border
+Fixed Click to Open css effect
