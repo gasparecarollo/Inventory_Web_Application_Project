@@ -1,0 +1,39 @@
+header {
+
+    background-color: steelblue;
+    font-family: monospace;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    align-items: center;
+    background-color: cadetblue;
+    color: aquamarine;
+
+    border-style: groove;
+    border-width: 3px;
+    border-right-width: 5px;
+    border-color: azure;
+
+}
+
+.SABUL {
+
+    display: inline-block;
+    margin: 0 0.5rem;
+    align-items: center;
+    color: aquamarine;
+
+
+}
+
+body {
+    grid-template-columns: (repeat, 1fr);
+    display: flex;
+
+}
