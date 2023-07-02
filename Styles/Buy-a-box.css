@@ -17,13 +17,14 @@ body {
 
 }
 
-.box_container {
+/* .box_container {
 
     width: 75%;
     height: 85%;
-    background-color: #ffffff;
-
+    background-color: #ffffff; 
 }
+
+*/
 
 nav ul li {
     display: inline-block;

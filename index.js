@@ -35,12 +35,23 @@ h3ForInStock.addEventListener("click", () => {
 })
 
 
-const getImgOffice = document.getElementsByClassName("#the-office")
-const hoverInsideBox = addEventListener("mouseover", () => {
-    theOffice.src = "/Users/gasparecarollo/10-1_Folder/Inventory_Web_Application/Assets/Opacity.jpg"
 
-})
+// const hoverInsideBox = addEventListener("mouseover", () => {
+//     .src = "/Users/gasparecarollo/10-1_Folder/Inventory_Web_Application/Assets/Opacity.jpg"
+function setNewImage() {
+    document.getElementById("theOfficeImg").src = "../assets/opacity.png"
+    document.getElementById("tmntImg").src = "../assets/TMNTopacity.png"
+    document.getElementById("rnmImg").src = "../assets/R&Mopacity.png"
+    document.getElementById("animeImg").src = "../assets/Animeopacity.png"
+}
+function setOldImage() {
 
+    document.getElementById("theOfficeImg").src = "../assets/theOfficeBox.png"
+    document.getElementById("tmntImg").src = "../assets/TMNTbox.png"
+    document.getElementById("rnmImg").src = "../assets/R&Mbox.png"
+    document.getElementById("animeImg").src = "../assets/Animebox.png"
+
+}
 //image Uploader
 const inputUploader = document.querySelector("input")
 const preview = document.querySelector(".preview")
