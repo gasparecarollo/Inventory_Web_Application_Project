@@ -1,9 +1,10 @@
 header {
 
-    background-color: steelblue;
-    font-family: monospace;
+    background-color: slategray;
+    font-family: fantasy;
     font-size: 20px;
-    color: cornflowerblue;
+    font-variant-east-asian: ruby;
+    color: darkred;
 }
 
 
@@ -12,10 +13,10 @@ nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
     align-items: center;
-    background-color: cadetblue;
+    background-color: silver;
     color: aquamarine;
 
-    border-style: groove;
+    border-style: outset;
     border-width: 3px;
     border-right-width: 5px;
     border-color: azure;
@@ -32,8 +33,37 @@ nav ul li {
 
 }
 
-body {
-    grid-template-columns: (repeat, 1fr);
+#custom_box {
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-block-end: 50%;
     display: flex;
+    grid-template-columns: 1 fr 1fr;
 
+}
+
+#item_name {
+    margin-left: 1%;
+
+}
+
+#selectbox {
+    margin-right: 2%;
+}
+
+#price {
+    margin-left: 1%;
+}
+
+#stock {
+
+    margin-left: 1%;
+}
+
+.h2_title {
+
+    font-size: 50px;
+    font-family: fantasy;
+    font-style: italic;
+    color: darkred;
 }

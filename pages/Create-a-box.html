@@ -11,19 +11,59 @@
 
 <body>
     <header>
-        <h1> Create-A-Box</h1>
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> Home</a></li>
-                <li> <a href="./Buy-a-box.html"> Buy-A-Box</a></li>
-                <li> <a href="./Create-A-Box.html"> Create-A-Box </a> </li>
-                <li> <a href=" ./stream-a-box.html"> Stream-A-Box </a></li>
-                <li> <a href="./services.html"> Services </a> </li>
-                <li> <a href="./Al_La_Cart.html"> Shopping Cart </a> </li>
-            </ul>
+        <div class="h1Div"></div>
+        <div id="h1_div">
+            <h1> Create-A-Box</h1>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html"> Home</a></li>
+                    <li> <a href="./Buy-a-box.html"> Buy-A-Box</a></li>
+                    <li> <a href=" ./stream-a-box.html"> Stream-A-Box </a></li>
+                    <li> <a href="./services.html"> Services </a> </li>
+                    <li> <a href="./Al_La_Cart.html"> Shopping Cart </a> </li>
+                </ul>
+        </div>
 
         </nav>
     </header>
+    <div class="h2_title">
+        <h2>Create your own Mystery Box </h2>
+    </div>
+    <div class="custom_container"> </div>
+    <div id="custom_box">
+        <label>Item Name:
+            <input id="item_name" type="text" placeholder="Name of Mystery Box" />
+        </label>
+        <label for="Box"> Select Size: </label>
+        <select id="selectbox" name="BoxDimension">
+            <option value="Small">Small (8"L x 6"W x 4"H) </option>
+            <option value="Medium">Medium (12"L x 9"W x 4"H) </option>
+            <option value="Large">Larget (14"L x 10"W x 6"H) </option>
+            <option value="SuperSizeMe">SuperSizeMe (18"L x 12"W x 12"H) </option>
+
+        </select>
+        <br>
+        <label> Item Price:
+            <input id="price" type="number" placeholder="$0.00">
+        </label>
+        <br>
+        <br>
+        <label> Stock Availability:
+            <input id="stock" type="inStock" placeholder="In Stock/Sold Out">
+        </label>
+        <br>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <label for="imageUpload"> Choose Photo for Item: </label>
+                <input type="file" id="image_upload" name="image_upload" onchange="readURL(this)" accept="Image/*">
+            </div>
+            <div class="preview">
+                <p> No image has been uploaded</p>
+            </div>
+            <button>Submit </button>
+    </div>
+    </form>
+    </div>
 </body>
 
 </html>

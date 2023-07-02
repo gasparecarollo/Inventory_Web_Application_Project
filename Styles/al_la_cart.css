@@ -1,9 +1,9 @@
 header {
 
-    background-color: steelblue;
-    font-family: monospace;
+    background-color: slategray;
+    font-family: fantasy;
     font-size: 20px;
-    color: cornflowerblue;
+    color: darkred;
 }
 
 
@@ -12,10 +12,10 @@ nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
     align-items: center;
-    background-color: cadetblue;
+    background-color: silver;
     color: aquamarine;
 
-    border-style: groove;
+    border-style: outset;
     border-width: 3px;
     border-right-width: 5px;
     border-color: azure;
