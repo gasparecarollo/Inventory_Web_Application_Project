@@ -8,3 +8,6 @@ Fixed Click to Open css effect
 Added images to Assets folder, removed Click to Open code from Buy a Box html/css
 Added toggle event for instock which doesnt work
 Added hover event but it also doesnt work
+Hover events work
+Remove Update and Submit do not work
+Added media queries and a footer

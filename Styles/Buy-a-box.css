@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
 header {
 
     background-color: slategrey;
-    font-family: fantasy;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    font-family: "Rampart One", cursive;
     font-size: 20px;
     color: darkred;
+
 }
 
 body {
+
+    font-family: "Rampart One", cursive;
+    width: 100%;
     /* margin: 0;
     padding: 0;
     background: white;
@@ -37,6 +45,13 @@ footer h4 {
 .inventory_container {
     display: flow-root;
 }
+
+/* #mysteryBoxProduct1 {
+
+    font-size: 20px;
+    color: slategray;
+
+} */
 
 #officeDiv {
 

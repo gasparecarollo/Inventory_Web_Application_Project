@@ -7,6 +7,9 @@
     <title>Buy-A-Box</title>
     <!-- <link rel="stylesheet" href="../Styles/styles.css"> -->
     <link rel="stylesheet" href="../Styles/Buy-a-box.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../Styles/clicktoopen.css"> -->
     <script src="../index.js" defer>
     </script>
@@ -14,78 +17,117 @@
 
 <body>
     <header>
-        <h1> Buy-A-Box</h1>
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> Home</a></li>
-                <li> <a href="./Create-a-box.html"> Create-A-Box </a></li>
-                <li> <a href="./stream-a-box.html"> Stream-A-Box</a></li>
-                <li> <a href="./services.html"> Services </a> </li>
-                <li> <a href="./Al_La_Cart.html"> Shopping Cart </a> </li>
-            </ul>
+        <a href="#"> <img src="Assets/Closedbox.png" class="logo" alt=""> </a>
 
-        </nav>
+        <h1> Buy-A-Box</h1>
+        <div>
+            <nav>
+                <ul id="navMenu">
+                    <li> <a href="../index.html"> Home</a></li>
+                    <li> <a href="./Create-a-box.html"> Create-A-Box </a></li>
+                    <li> <a href="./stream-a-box.html"> Stream-A-Box</a></li>
+                    <li> <a href="./services.html"> Services </a> </li>
+                    <li> <a href="./Al_La_Cart.html"> Shopping Cart</a> </li>
+                </ul>
+
+            </nav>
+        </div>
     </header>
     <div class=box_container>
         <div id="stockForm">
             <h1> Inventory Form</h1>
-            <form>
+            <form id="myForm">
                 <label> Item Name:
-                    <input type="text" placeholder="Name of Mystery Box">
+                    <input id="itemName" type="text" placeholder="Name of Mystery Box" required>
                 </label>
                 <label> Price: </label>
-                <input type="number" placeholder="$0.00">
+                <input id="price" type="number" placeholder="$0.00">
                 <label> In Stock </label>
-                <input type="text" placeholder="In Stock/Out of stock">
-                <button type="submit" value="submut" name="submit"> Submit</button>
-                <button type="reset" value="reset" name="reset"> Reset</button>
+                <input id="inStock" type="text" placeholder="In Stock/Out of stock">
+                <button class="submitBtn" type="submit" value="submit" name="submit" onclick="inputData()">
+                    Submit</button>
+                <button class="resetBtn" type="reset" value="reset" name="reset"> Reset</button>
 
             </form>
 
             <ul> Inventory List</ul>
-            <li>
-                <span> Hello Kitty Mystery Box</span>
-                <label>Item Price: <input type="number" placeholder="$0.00"></label>
-                <label> Stock Availability: In Stock</label>
-                <button> Update </button>
-                <button> Remove </button>
-            </li>
-            <li>
-                <span> Horror Mystery Box</span>
-                <label>Item Price: <input type="number" placeholder="$0.00"></label>
-                <label> Stock Availability: In Stock</label>
-                <button> Update </button>
-                <button> Remove </button>
+            <p id="inventListSect"> </p>
+            <li id="inventList">
             </li>
             </ul>
         </div>
+        <section id="mysteryBoxProduct1">
+            <h1> Featured Mystery Boxes</h1>
+            <p>All Exclusive Items Not Found In Stores</p>
+            </br>
+            <div class="inventory_container">
+                <div id=officeDiv>
+                    <h3>The Office Mystery Box </h1>
+                        <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                            src="../Assets/theOfficeBox.png" height="600" width="620">
 
-        <div class="inventory_container">
-            <div id=officeDiv>
-                <h1>The Office Mystery Box </h1>
-                <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
-                    src="../Assets/theOfficeBox.png" height="600" width="620">
+                        <h4> $49.99 </h4>
+                        <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+                <div id="tmntDiv">
+                    <h3>Teenage Mutant Ninja Turtles Mystery Box</h1>
+                        <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                            src="../Assets/TMNTBox.png" alt=" The TMNT MysteryBox" height="540" width="520">
+                        <div class="description2">
+                            <span> Sold online only </span>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4> $56 </h4>
+                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+
+                        </div>
+                </div>
+                <div id="rnmDiv">
+                    <h3>Rick and Morty Mystery Box</h1>
+                        <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                            src="../Assets/R&Mbox.png" alt="R & M MysteryBox" height="600" width="620">
+                        <div class="description3">
+                            <span> Sold online only </span>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4> $64.99 </h4>
+                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+
+                        </div>
+                </div>
+
+
+                <div id="animeDiv">
+                    <h3>Anime Mystery Box</h1>
+                        <img id="animeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                            src="../Assets/AnimeBox.png" alt="Anime MysteryBox" height="640" width="620">
+                        <div class="description4">
+                            <span> Sold online only </span>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4> $49.99 </h4>
+                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+
+                        </div>
+                </div>
 
             </div>
-            <div id="tmntDiv">
-                <h1>Teenage Mutant Ninja Turtles Mystery Box</h1>
-                <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/TMNTBox.png"
-                    alt=" The TMNT MysteryBox" height="540" width="520">
-            </div>
-            <div id="rnmDiv">
-                <h1>Rick and Morty Mystery Box</h1>
-                <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/R&Mbox.png"
-                    alt="R & M MysteryBox" height="600" width="620">
-            </div>
-
-
-            <div id="animeDiv">
-                <h1>Anime Mystery Box</h1>
-                <img id="animeImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/AnimeBox.png"
-                    alt="Anime MysteryBox" height="640" width="620">
-            </div>
-
-        </div>
+        </section>
     </div>
 
 
