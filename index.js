@@ -23,17 +23,19 @@ function inputData() {
     const price = document.forms["myForm"].price.value;
     const inStock = document.forms["myForm"].inStock.checked ? "In Stock" : "Out of Stock";
 
+    const listItem = document.createElement("li");
+    listItem.innerText = `Item Name: ${itemName} | Price: ${price} | ${inStock}`;
+
+
     const removeButton = document.createElement("button");
     removeButton.innerText = "Remove";
     removeButton.addEventListener("click", () => {
         listItem.remove();
 
     });
-
-    const listItem = document.createElement("li");
-    listItem.innerText = `Item Name: ${itemName} | Price: ${price} | ${inStock}`;
+    listItem.appendChild(removeButton);
     inventoryList.appendChild(listItem);
-}
+};
 
 function resetData() {
     inventoryList.innerText = " ";

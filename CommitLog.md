@@ -11,3 +11,5 @@ Added hover event but it also doesnt work
 Hover events work
 Remove Update and Submit do not work
 Added media queries and a footer
+Fixed the inventory list. It would generate one item list and then be rep
+laced when you tried adding a new item
