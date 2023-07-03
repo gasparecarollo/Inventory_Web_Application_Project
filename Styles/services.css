@@ -31,3 +31,42 @@ nav ul li {
 
 
 }
+
+@media (max-width: 1279px) {
+
+    footer {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    @media (max-width: 768px) {
+
+
+        header {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        footer {
+
+            padding: 25px;
+            text-align: center;
+
+
+        }
+
+        footer ul {
+
+            list-style: none;
+
+        }
+
+        footer h4 {
+
+            border-bottom: none;
+
+        }
+    }
+}
