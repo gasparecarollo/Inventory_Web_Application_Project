@@ -26,6 +26,11 @@ function inputData() {
 
 }
 
+function resetData() {
+    inventoryList.innerText = " "
+
+
+}
 
 
 
