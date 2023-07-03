@@ -26,44 +26,72 @@
 
         </nav>
     </header>
-    <div class=box_container> </div>
-    <div id=officeDiv>
-        <h1>The Office Mystery Box </h1>
-        <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/theOfficeBox.png"
-            height="600" width="620">
-        <h2 id=""> </h2>
-        <label> Item Name:
-            <input value="MysteryBox" placeholder="Name of Mystery Box">
+    <div class=box_container>
+        <div id="stockForm">
+            <h1> Inventory Form</h1>
+            <form>
+                <label> Item Name:
+                    <input type="text" placeholder="Name of Mystery Box">
+                </label>
+                <label> Price: </label>
+                <input type="number" placeholder="$0.00">
+                <label> In Stock </label>
+                <input type="text" placeholder="In Stock/Out of stock">
+                <button type="submit" value="submut" name="submit"> Submit</button>
+                <button type="reset" value="reset" name="reset"> Reset</button>
 
-        </label>
-        <h3 class="inStock"> In Stock </h3>
-        <!-- </div> -->
-        <div id="tmntDiv">
-            <h1>Teenage Mutant Ninja Turtles Mystery Box</h1>
-            <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/TMNTBox.png"
-                alt=" The TMNT MysteryBox" height="540" width="520">
-            <h2 id=""> </h2>
-            <h3 class="inStock"> In Stock </h3>
+            </form>
+
+            <ul> Inventory List</ul>
+            <li>
+                <span> Hello Kitty Mystery Box</span>
+                <label>Item Price: <input type="number" placeholder="$0.00"></label>
+                <label> Stock Availability: In Stock</label>
+                <button> Update </button>
+                <button> Remove </button>
+            </li>
+            <li>
+                <span> Horror Mystery Box</span>
+                <label>Item Price: <input type="number" placeholder="$0.00"></label>
+                <label> Stock Availability: In Stock</label>
+                <button> Update </button>
+                <button> Remove </button>
+            </li>
+            </ul>
         </div>
-        <div id="rnmDiv">
-            <h1>Rick and Morty Mystery Box</h1>
-            <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/R&Mbox.png"
-                alt="R & M MysteryBox" height="600" width="620">
-            <h2 id=""> </h2>
-            <h3 class="inStock"> In Stock </h3>
-        </div>
-        <div>
+
+        <div class="inventory_container">
+            <div id=officeDiv>
+                <h1>The Office Mystery Box </h1>
+                <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                    src="../Assets/theOfficeBox.png" height="600" width="620">
+
+            </div>
+            <div id="tmntDiv">
+                <h1>Teenage Mutant Ninja Turtles Mystery Box</h1>
+                <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/TMNTBox.png"
+                    alt=" The TMNT MysteryBox" height="540" width="520">
+            </div>
+            <div id="rnmDiv">
+                <h1>Rick and Morty Mystery Box</h1>
+                <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/R&Mbox.png"
+                    alt="R & M MysteryBox" height="600" width="620">
+            </div>
+
+
             <div id="animeDiv">
                 <h1>Anime Mystery Box</h1>
                 <img id="animeImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/AnimeBox.png"
                     alt="Anime MysteryBox" height="640" width="620">
-                <h2 id=""> </h2>
-                <h3 class="inStock"> In Stock </h3>
             </div>
 
         </div>
+    </div>
 
 
 </body>
+<footer>
+    <h4> Another Stupid Unboxing ™</h4>
+</footer>
 
 </html>
