@@ -1,40 +1,53 @@
-const dontBodyShameMe = document.querySelector("body")
-const headingOne = document.querySelector("h1")
-const newForm = document.getElementById("myForm")
-const submit = document.getElementsByClassName(".submitBtn")
-const reset = document.getElementsByClassName(".resetBtn")
-const allFormInputs = document.querySelectorAll("#stockForm input")
-const unorderedList = document.querySelector("ul")
-const getItemName = document.getElementById("itemName")
-const getPrice = document.getElementById("price")
-const inStock = document.getElementById("inStock")
+const dontBodyShameMe = document.querySelector("body");
+const headingOne = document.querySelector("h1");
+const newForm = document.getElementById("myForm");
+const submit = document.getElementsByClassName(".submitBtn");
+const reset = document.getElementsByClassName(".resetBtn");
+const allFormInputs = document.querySelectorAll("#stockForm input");
+const unorderedList = document.querySelector("ul");
+const getItemName = document.getElementById("itemName");
+const getPrice = document.getElementById("price");
+const inStock = document.getElementById("inStock");
 
-const inventoryList = document.getElementById("inventList")
-const inventList = document.getElementById("inventListSect")
-
-
-const newItemForList = document.querySelector("p")
-const imageUploaded = document.querySelector("image")
-
-newForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-});
+const inventoryList = document.getElementById("inventList");
+const inventList = document.getElementById("inventListSect");
 
 
+const newItemForList = document.querySelector("p");
+const imageUploaded = document.querySelector("image");
+
+
+//form inside Buy-A-Box
 function inputData() {
-    inventoryList.innerText = "item Name:" + " " + " " + document.forms["myForm"].itemName.value + " " + " " + " " + "Price:" + " " + " " + " " + document.forms["myForm"].price.value + " " + " " + "In Stock:" + " " + " " + " " + document.forms["myForm"].inStock.value;
+    const itemName = document.forms["myForm"].itemName.value;
+    const price = document.forms["myForm"].price.value;
+    const inStock = document.forms["myForm"].inStock.checked ? "In Stock" : "Out of Stock";
 
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "Remove";
+    removeButton.addEventListener("click", () => {
+        listItem.remove();
+
+    });
+
+    const listItem = document.createElement("li");
+    listItem.innerText = `Item Name: ${itemName} | Price: ${price} | ${inStock}`;
+    inventoryList.appendChild(listItem);
 }
 
 function resetData() {
-    inventoryList.innerText = " "
+    inventoryList.innerText = " ";
 
 
 }
 
+newForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    inputData()
+
+});
 
 
-// toDoListDiv.append(newForm)
 
 
 

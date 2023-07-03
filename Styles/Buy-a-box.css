@@ -37,14 +37,15 @@ footer h4 {
 .box_container {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    align-items: flex-start;
+    margin-bottom: 10%;
 
 }
 
 .inventory_container {
     display: flow-root;
 }
+
 
 /* #mysteryBoxProduct1 {
 
@@ -106,6 +107,19 @@ nav ul li {
 #tmntDiv {
 
     margin-left: 2%;
+}
+
+
+
+#OfficeDiv h4 {
+
+
+    margin-left: 25%;
+}
+
+#description2 h4 {
+
+    margin-left: 25%
 }
 
 @media (max-width: 1279px) {

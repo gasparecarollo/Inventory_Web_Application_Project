@@ -33,101 +33,103 @@
             </nav>
         </div>
     </header>
-    <div class=box_container>
-        <div id="stockForm">
-            <h1> Inventory Form</h1>
-            <form id="myForm">
-                <label> Item Name:
-                    <input id="itemName" type="text" placeholder="Name of Mystery Box" required>
-                </label>
-                <label> Price: </label>
-                <input id="price" type="number" placeholder="$0.00">
-                <label> In Stock </label>
-                <input id="inStock" type="text" placeholder="In Stock/Out of stock">
-                <button class="submitBtn" type="submit" value="submit" name="submit" onclick="inputData()">
-                    Submit</button>
-                <button class="resetBtn" type="reset" value="reset" name="reset" onclick="resetData()"> Reset</button>
+    <div class="box_container">
+        <h1 class="inventForm"> Inventory Form</h1>
+        <form id="myForm">
+            <input type="text" id="itemName" placeholder="Name of Mystery Box" required />
+            <input type="number" id="price" placeholder="$0.00" required />
+            <input type="checkbox" id="inStock" />
+            <input id="inStock" type="text" placeholder="In Stock/Out of stock" />
+            <button class="submitBtn" type="submit" value="submit" name="submit">Submit</button>
+            <button class="resetBtn" type="reset" value="reset" name="reset" onclick="resetData()"> Reset</button>
+        </form>
 
-            </form>
+        <ul id="inventList"> Inventory List</ul>
+    </div>
+    <section id="mysteryBoxProduct1">
+        <h1> Featured Mystery Boxes</h1>
+        <p>All Exclusive Items Not Found In Stores</p>
+        <h4> *****Disclaimer***** Contents revealed inside the Mystery Box image are only a sample and not reflective of
+            the items you will receive.</h4>
+        </br>
+        <div class="inventory_container">
+            <div id=officeDiv>
+                <h3>The Office Mystery Box </h1>
+                    <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                        src="../Assets/theOfficeBox.png" height="600" width="620">
+                    <div class=description1>
+                        <span> Sold online only </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4> $56 </h4>
+                        <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                    </div>
+            </div>
+            <div id="tmntDiv">
+                <h3>Teenage Mutant Ninja Turtles Mystery Box</h1>
+                    <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/TMNTBox.png"
+                        alt=" The TMNT MysteryBox" height="540" width="520">
+                    <div class="description2">
 
-            <ul> Inventory List</ul>
-            <p id="inventListSect"> </p>
-            <li id="inventList">
-            </li>
-            </ul>
-        </div>
-        <section id="mysteryBoxProduct1">
-            <h1> Featured Mystery Boxes</h1>
-            <p>All Exclusive Items Not Found In Stores</p>
-            </br>
-            <div class="inventory_container">
-                <div id=officeDiv>
-                    <h3>The Office Mystery Box </h1>
-                        <img id="theOfficeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
-                            src="../Assets/theOfficeBox.png" height="600" width="620">
+                        <span class="soOnly2"> Sold online only </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4> $56 </h4>
+                        <a href="#"><i class="fal fa-shopping-cart"></i></a>
 
+                    </div>
+            </div>
+            <div id="rnmDiv">
+                <h3>Rick and Morty Mystery Box</h1>
+                    <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()" src="../Assets/R&Mbox.png"
+                        alt="R & M MysteryBox" height="600" width="620">
+                    <div class="description3">
+                        <span> Sold online only </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4> $64.99 </h4>
+                        <a href="#"><i class="fal fa-shopping-cart"></i></a>
+
+                    </div>
+            </div>
+
+
+            <div id="animeDiv">
+                <h3>Anime Mystery Box</h1>
+                    <img id="animeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                        src="../Assets/AnimeBox.png" alt="Anime MysteryBox" height="640" width="620">
+                    <div class="description4">
+                        <span> Sold online only </span>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                         <h4> $49.99 </h4>
                         <a href="#"><i class="fal fa-shopping-cart"></i></a>
-                </div>
-                <div id="tmntDiv">
-                    <h3>Teenage Mutant Ninja Turtles Mystery Box</h1>
-                        <img id="tmntImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
-                            src="../Assets/TMNTBox.png" alt=" The TMNT MysteryBox" height="540" width="520">
-                        <div class="description2">
-                            <span> Sold online only </span>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4> $56 </h4>
-                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
 
-                        </div>
-                </div>
-                <div id="rnmDiv">
-                    <h3>Rick and Morty Mystery Box</h1>
-                        <img id="rnmImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
-                            src="../Assets/R&Mbox.png" alt="R & M MysteryBox" height="600" width="620">
-                        <div class="description3">
-                            <span> Sold online only </span>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4> $64.99 </h4>
-                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
-
-                        </div>
-                </div>
-
-
-                <div id="animeDiv">
-                    <h3>Anime Mystery Box</h1>
-                        <img id="animeImg" onmouseover="setNewImage()" onmouseout="setOldImage()"
-                            src="../Assets/AnimeBox.png" alt="Anime MysteryBox" height="640" width="620">
-                        <div class="description4">
-                            <span> Sold online only </span>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4> $49.99 </h4>
-                            <a href="#"><i class="fal fa-shopping-cart"></i></a>
-
-                        </div>
-                </div>
-
+                    </div>
             </div>
-        </section>
+
+        </div>
+    </section>
     </div>
 
 
