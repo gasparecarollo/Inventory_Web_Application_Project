@@ -22,10 +22,14 @@ function inputData() {
     const itemName = document.forms["myForm"].itemName.value;
     const price = document.forms["myForm"].price.value;
     const inStock = document.forms["myForm"].inStock.checked ? "In Stock" : "Out of Stock";
+    const imageUrl = document.forms["myForm"].imageUrl.value;
 
     const listItem = document.createElement("li");
     listItem.innerText = `Item Name: ${itemName} | Price: ${price} | ${inStock}`;
 
+    const imageUpload = document.createElement("img");
+    imageUpload.src = imageUrl;
+    listItem.appendChild(imageUpload);
 
     const removeButton = document.createElement("button");
     removeButton.innerText = "Remove";
