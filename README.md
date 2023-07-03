@@ -6,3 +6,8 @@ Although you can maneuver through all the pages, focus your attention to the Hom
 
 In the Buy-A-Box page, there are onmouseover and onmouseout events that enable the user to hover over each Mystery Box revealing the contents of the mystery box. 
 
+On the left side of the page we have an Inventory Form that allows Admin to input an Item Name, Price, and Stock availability.
+
+Stretch Goals:
+
+Imported Google Font
